@@ -1,0 +1,185 @@
+% NOTE: This is very inspired by http://www.toofishes.net/blog/latex-resume-follow-up/
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[stretch=10]{microtype}
+\usepackage{hyperref}
+\usepackage{tgpagella}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\pagestyle{empty}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{center}
+{\huge \textbf{Pavan Raga}}
+
+% NOTE: Alternatively could have used \hfill
+
+\href{https://github.com/pavanraga}{www.github.com/pavanraga}\ \ \textbullet
+\ \ \href{https://www.linkedin.com/in/pavanraga/}{www.linkedin.com/in/pavanraga}\ \ \textbullet
+\ \ \href{mailto:pavan.raga98@gmail.com}{pavan.raga@u.nus.edu}\ \ \textbullet
+\ \ {+65-98612663} \\
+\ \ {463 Pasir Panjang Rd, Singapore 118797}
+
+\end{center}
+
+\hrule
+\vspace{-1.0em}
+\subsection*{About Me}
+\noindent Highly skilled software engineer with more than 5 years of experience in software development and DevOps.\\ I'm seeking a Software Engineering position involving infrastructure systems or backend. I'm passionate about immutable, reliable, automated infrastructure that scales optimally with organizational needs.
+\\
+
+\hrule
+\vspace{-1.0em}
+\subsection*{Work Experience}
+  \begin{itemize}
+    \parskip=-0.5em
+
+    % % Dyson
+    % \item[]
+    % {\href{http://www.dyson.com}{\textbf{Dyson - Intelligent Machines}} \hfill
+    %   \textbf{Singapore}}
+    % \\
+    % {\emph{Graduate Research Intern} \hfill \emph{Jan 2020 - April 2020}}
+
+    % \begin{itemize}[label=\textbullet]
+    %   \itemsep0em
+    %   \item Assisted in data cleansing by creating post-processing scripts for better feature filtering and detection in robot.
+    % \end{itemize}
+
+    % WalletSocket Inc
+    \item[]
+    {\href{https://www.walletsocket.com/}{\textbf{WalletSocket - Cloud Team}} \hfill
+      \textbf{Singapore}}
+    \\
+    {\emph{DevOps Engineer - PT} \hfill \emph{Aug 2019 - Jan 2020}}
+
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Assisted in design and architect of the Pay0k platform which is a payment gateway for merchants to accept various cryptocurrencies like bitcoin, ethereum.
+      \item Responsible for developing and maintaining the CI/CD pipeline for both staging and production environments.
+      \item Utilized Kubernetes extensively to orchestrate the life cycle of polyglot microservices. Followed best practices to develop manifests and integrating the same with continuous delivery.
+      \item Handled increasing traffic load by scaling the backend services/container horizontally by using K8s HPA.
+    \end{itemize}
+
+    % Cisco promotion
+    \item[]
+    {\href{http://www.cisco.com}{\textbf{Cisco Systems Inc}} \hfill
+      \textbf{Bangalore, India}}
+    \\
+    {\emph{Software Engineer II} \hfill \emph{Apr 2018 - Jun 2019}}
+
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Independently worked on “Cisco-Capture” tool to enhance the debuggability in live 
+      deployments by capturing control and data traffic.
+      \item Moved monolothic application to configure routers to containerized
+      application and deployed them in k8s cluster to provide fault tolerance.
+    \end{itemize}
+
+
+    % Cisco FT
+    \item[]
+    {\href{http://www.cisco.com}{\textbf{Cisco Systems Inc}} \hfill
+      \textbf{Bangalore, India}}
+    \\
+    {\emph{Software Engineer I} \hfill \emph{Mar 2016 - May 2018}}
+
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Developed Layer 2 features of \href{https://www.cisco.com/c/en/us/support/routers/asr-903-router/model.html}{ASR 903} series
+      of service aggregation routers.
+      \item Implemented \href{https://www.cisco.com/c/en/us/td/docs/routers/asr903/software/guide/chassis/xe
+      3s/b_Config_Guide_fullbook/b-cfg-dyg-gasp.html}{"Dying Gasp"} support to minimise down time during power outages.
+      \item Built “Autonomous Networking” feature to enable zero touch deployments. This is pull-based infrastructure as Code tool.
+    \end{itemize}
+
+    % Allgo Systems
+    \item[]
+    {\href{https://www.allgosystems.com/}{\textbf{AllGo Embedded Systems}} \hfill
+      \textbf{Bengalore, India}}
+    \\
+    {\emph{Software Engineer} \hfill \emph{Jul 2014 - Feb 2016}}
+
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Part of Mirrorlink stack team, a stack which helps in replicating the
+smartphones display on to car’s HMI/infotainment unit.
+      \item Developed CI of software commits using Jenkins to enable fast delivery. 
+      \item Built a recovery module for HMI by detecting unhealthy application in the unit and respawning them.
+    \end{itemize}
+
+  \end{itemize}
+
+
+% TODO(zmanji): Revise this. Turn it into a 'Keywords' section?
+% \hrule
+% \vspace{-0.4em}
+% \subsection*{Technical Skills}
+% \begin{description}[labelindent=\parindent]
+%   \item[Languages:]
+%   Assembly, C, C++, Java, JavaScript, \LaTeX, Python, Ruby (on Rails)
+% \end{description}
+
+\hrule
+\vspace{-1.0em}
+\subsection*{Education}
+  \begin{itemize}
+    \parskip=-0.5em
+
+    \item[]
+    {\href{http://www.nus.edu.sg/}{\textbf{National University of Singapore (NUS)}} \hfill
+      \textbf{Singapore}}
+    \\
+    {\emph{Master of Technology in Software Engineering} \hfill
+      \emph{Jun 2019 - Jul 2020}}
+
+    \begin{itemize}[label=\textbullet]
+      \item Architecting Cloud Native Scalable Systems, Securing Ubiquitous Systems and Engineering Big Data
+      \item Developed pay0k platform for WalletSocket and deployed into production for south korea region in Jan 2020.
+    \end{itemize}
+
+    \item[]
+    {\href{https://www.nie.ac.in/}{\textbf{National Institute of Engineering (NIE)}} \hfill
+      \textbf{Mysuru, India}}
+    \\
+    {\emph{Bachelor of Engineering in Computer Science} \hfill
+      \emph{Jun 2010 - Sep 2014}}
+
+    % \begin{itemize}[label=\textbullet]
+    %   \item Related Coursework: Compilers, Programming Languages, Operating
+    %     Systems, Distributed Systems.
+    %   \item Created a compiler for a subset of Java 1.3 for the
+    %     x86 architecture for compilers course.
+    % \end{itemize}
+  \end{itemize}
+  
+\hrule
+\vspace{-1.0em}
+\subsection*{Professional Certifications}
+\begin{itemize}
+    \parskip=-0.5em
+  \item
+  {\href{https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/}{Certified Kubernetes Administrator (CKA) Issued by: Linux Foundation}\hfill
+      \textbf{Feb 2020}}
+  \item
+  {\href{https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2019-04-06&ci=AWS00799157}{AWS Certified Solutions Architect(ACSAA) Issued by: AWS}\hfill
+      \textbf{Apr 2019}}
+\end{itemize}
+
+\hrule
+\vspace{-1.0em}
+\subsection*{Keywords}
+\begin{description}[labelindent=\parindent]
+  \parskip=-0.5em
+\item[Languages:] Python, C, YAML.
+% \textbf{Have Used:} C, Python. \textbf{Want To Use:} Go.
+  \item[Infrastructure:] Kubernetes, Docker, AWS, DigitalOcean
+  \item[Tools:] Jenkins, Ansible, Jira, Wireshark, VS Code
+\end{description}
+
+\end{document}
