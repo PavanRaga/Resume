@@ -1,7 +1,7 @@
 % NOTE: This is very inspired by http://www.toofishes.net/blog/latex-resume-follow-up/
 
-\documentclass[10pt,letterpaper]{article}
-\usepackage[margin=0.75in]{geometry}
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.5in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[stretch=10]{microtype}
@@ -30,7 +30,7 @@
 \hrule
 \vspace{-1.0em}
 \subsection*{About Me}
-\noindent Highly skilled software engineer with more than 5 years of experience in software development and DevOps.\\ I'm seeking a Software Engineering position involving infrastructure systems or backend. I'm passionate about immutable, reliable, automated infrastructure that scales optimally with organizational needs.
+\noindent Highly skilled software engineer with more than 5 years of experience in software development and DevOps. I’m seeking a DevOps Engineer/Consultant role involving infrastructure systems or backend development. I’m passionate about immutable, reliable, automated infrastructure that scales optimally with organizational needs.
 \\
 
 \hrule
@@ -50,7 +50,20 @@
     %   \itemsep0em
     %   \item Assisted in data cleansing by creating post-processing scripts for better feature filtering and detection in robot.
     % \end{itemize}
+    % Dyson Inc
+    
+    \item[]
+    {\href{https://www.dyson.com.sg/}{\textbf{Dyson}} \hfill
+      \textbf{Singapore}}
+    \\
+    {\emph{DevOps Engineer - Intern} \hfill \emph{Jan 2020 - Apr 2020}}
 
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Developing an internal platform to detect the best suited object detection algorithm given a data-set.
+      \item Deploying the services using docker compose locally for testing and re-deploying the same to \\ managed cloud offerings such as EKS by AWS for production use.
+    \end{itemize}
+    \ \
     % WalletSocket Inc
     \item[]
     {\href{https://www.walletsocket.com/}{\textbf{WalletSocket - Cloud Team}} \hfill
@@ -64,8 +77,10 @@
       \item Responsible for developing and maintaining the CI/CD pipeline for both staging and production environments.
       \item Utilized Kubernetes extensively to orchestrate the life cycle of polyglot microservices. Followed best practices to develop manifests and integrating the same with continuous delivery.
       \item Handled increasing traffic load by scaling the backend services/container horizontally by using K8s HPA.
+      \item Implemented application monitoring using Grafana/prometheus and k8s WebUI.
+      \item Deployed replicated MongoDB using helm to provide high fault tolerance for the persistent layer.
     \end{itemize}
-
+\ \
     % Cisco promotion
     \item[]
     {\href{http://www.cisco.com}{\textbf{Cisco Systems Inc}} \hfill
@@ -80,8 +95,7 @@
       \item Moved monolothic application to configure routers to containerized
       application and deployed them in k8s cluster to provide fault tolerance.
     \end{itemize}
-
-
+\ \
     % Cisco FT
     \item[]
     {\href{http://www.cisco.com}{\textbf{Cisco Systems Inc}} \hfill
@@ -91,13 +105,12 @@
 
     \begin{itemize}[label=\textbullet]
       \itemsep0em
-      \item Developed Layer 2 features of \href{https://www.cisco.com/c/en/us/support/routers/asr-903-router/model.html}{ASR 903} series
+      \item Developed Layer 2 features of ASR 903 series
       of service aggregation routers.
-      \item Implemented \href{https://www.cisco.com/c/en/us/td/docs/routers/asr903/software/guide/chassis/xe
-      3s/b_Config_Guide_fullbook/b-cfg-dyg-gasp.html}{"Dying Gasp"} support to minimise down time during power outages.
+      \item Implemented Dying Gasp support to minimise down time during power outages.
       \item Built “Autonomous Networking” feature to enable zero touch deployments. This is pull-based infrastructure as Code tool.
     \end{itemize}
-
+\ \
     % Allgo Systems
     \item[]
     {\href{https://www.allgosystems.com/}{\textbf{AllGo Embedded Systems}} \hfill
@@ -132,7 +145,7 @@ smartphones display on to car’s HMI/infotainment unit.
     \parskip=-0.5em
 
     \item[]
-    {\href{http://www.nus.edu.sg/}{\textbf{National University of Singapore (NUS)}} \hfill
+    {\href{http://www.nus.edu.sg/}{\textbf{National University of Singapore (NUS)}} {GPA: 4.0/5.0} \hfill
       \textbf{Singapore}}
     \\
     {\emph{Master of Technology in Software Engineering} \hfill
@@ -144,7 +157,7 @@ smartphones display on to car’s HMI/infotainment unit.
     \end{itemize}
 
     \item[]
-    {\href{https://www.nie.ac.in/}{\textbf{National Institute of Engineering (NIE)}} \hfill
+    {\href{https://www.nie.ac.in/}{\textbf{National Institute of Engineering (NIE)}} {GPA: 8.99/10} \hfill
       \textbf{Mysuru, India}}
     \\
     {\emph{Bachelor of Engineering in Computer Science} \hfill
@@ -162,9 +175,9 @@ smartphones display on to car’s HMI/infotainment unit.
 \vspace{-1.0em}
 \subsection*{Professional Certifications}
 \begin{itemize}
-    \parskip=-0.5em
+    \parskip=-0.4em
   \item
-  {\href{https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/}{Certified Kubernetes Administrator (CKA) Issued by: Linux Foundation}\hfill
+  {\href{https://www.youracclaim.com/badges/ef62e195-5e7f-4990-aacf-3b77567e03a2}{Certified Kubernetes Administrator (CKA) Issued by: Linux Foundation}\hfill
       \textbf{Feb 2020}}
   \item
   {\href{https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2019-04-06&ci=AWS00799157}{AWS Certified Solutions Architect(ACSAA) Issued by: AWS}\hfill
@@ -175,11 +188,12 @@ smartphones display on to car’s HMI/infotainment unit.
 \vspace{-1.0em}
 \subsection*{Keywords}
 \begin{description}[labelindent=\parindent]
-  \parskip=-0.5em
+  \parskip=-0.4em
 \item[Languages:] Python, C, YAML.
 % \textbf{Have Used:} C, Python. \textbf{Want To Use:} Go.
-  \item[Infrastructure:] Kubernetes, Docker, AWS, DigitalOcean
-  \item[Tools:] Jenkins, Ansible, Jira, Wireshark, VS Code
+  \item[Infrastructure:] Kubernetes, Docker, Amazon Web Service, DigitalOcean, Google Cloud Platform
+  \item[Monitoring/Log:] Grafana, Prometheus, Elasticsearch, Kibana, Logstash
+  \item[Tools:] Jenkins, Ansible, Jira, Wireshark, VS Code, Git, Docker, Nginx
 \end{description}
 
 \end{document}
